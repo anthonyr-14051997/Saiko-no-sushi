@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "japanese";
+    src: url("../assets/crayonfont/crayon_1-1.ttf") format("woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+/* ----------------- background */
+html {
+    background: url('../assets/img/bg.svg') no-repeat center fixed;
+    background-size: cover;
+    font-size: 4rem;
+    height: 100%;
+}
+body {
+    color: rgb(0, 0, 0);
+    width: 98.8vw;
+    font-family: 'Smooch Sans', sans-serif;
+}
+main {
+    width: 100%;
+    font-size: 1em;
+}
+img {
+    border-radius: 5px;
+}
+/* ---------------- reset */
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: red;
+    color: white;
+}
+input {
+    border: none;
+    background: none;
+}
+input:focus {
+    outline: none;
+    background-color: transparent;
+    border-radius: 50px;
+}
+input::selection {
+    background-color: transparent;
+}
+/* ----------------- nav */
+nav {
+    width: 100%;
+    transition: 1s ease-out;
+    z-index: 10;
+    display: block;
+    top: 0;
+    position: absolute;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.692);
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+}
+nav ul li a {
+    color: whitesmoke;
+    font-size: .7em;
+    transition: 1s ease-out;
+}
+.logo{
+    background-image: url('../assets/img/Logo.svg');
+    height: 15vh;
+    width: 15vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: fixed;
+}
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:0px 0px 2px white;
+}
+/* ------------------------ burger */
+.burger {
+    position: fixed;
+    right: 20vh;
+    top: 20vh;
+    z-index: 10;
+    cursor: pointer;
+}
+#checkboxe {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+#checkboxe .row1, 
+#checkboxe .row3 {
+    display: block;
+    width: 5vw;
+    height: .5vh;
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 2vh;
+    transition: .5s ease;
+}
+#checkboxe .row2 {
+    display: block;
+    width: 2.5vw;
+    height: .5vh;
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 2vh;
+    transition: .5s ease;
+}
+#check {
+    position: fixed;
+    background: transparent;
+    cursor: pointer;
+    left: -10vh;
+}
+#check:checked ~ label .row1 {
+    transition: .5s ease;
+    transform: rotate(35deg) translate(10px, 10px);
+}
+#check:checked ~ label .row2 {
+    transition: .5s ease;
+    display: none;
+}
+#check:checked ~ label .row3 {
+    transition: .5s ease;
+    transform: rotate(-35deg) translate(-10px, -10px);
+}
+/* ---------- page panier */
+.panier {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.panierfloat2 {
+    margin: 5vh;
+    width: 30vw;
+    background: grey;
+}
+.votremenu2 {
+    text-align: center;
+}
+.panierfloat2 li {
+    list-style-type: none;
+    margin-left: 5vh;
+    font-size: .9em;
+}
+/* ------------------------ panier floatant */
+.panier1 {
+    transition: 1s ease-in;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    
+}
+.panierfloat {
+    position: fixed;
+    right: 0;
+    margin-top: 25vh;
+    width: 30vw;
+    background: grey;
+    z-index: 9;
+}
+.votremenu {
+    text-align: center;
+}
+.panierfloat li {
+    list-style-type: none;
+    margin-left: 5vh;
+    font-size: .9em;
+}
+/* -------------------- titre */
+.titre {
+    background-image: url('../assets/img/imgacceuil.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre2 {
+    color: whitesmoke;
+    height: 40vh;
+    overflow: hidden;
+}
+.titre4 {
+    color: whitesmoke;
+    overflow: hidden;
+}
+.titre4 h2 + .ligne {
+    margin: 5vh;
+}
+.bg50 {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10vh;
+}
+.cadre {
+    background: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* ------------------- ligne */
+.ligne1 {
+    margin-left: 30%;
+    background-color: red;
+    width: 50%;
+    height: .5vh;
+}
+.ligne {
+    margin-left: 5%;
+    background-color: red;
+    width: 50%;
+    height: .5vh;
+}
+.ligne2 {
+    background-color: black;
+    width: 30%;
+    height: 1vh;
+}
+.ligne3 {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: .5vh;
+    margin-left: 10%;
+}
+.ligne4 {
+    background-color: rgb(255, 0, 0);
+    width: 30%;
+    height: .2vh;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+}
+/* ------------------------ menu */
+.pagemenu ul li p {
+    overflow: hidden;
+}
+.pagemenu ul li img:hover {
+    border: outset .1vh rgb(255, 0, 0);
+}
+.pagemenu ul li {
+    cursor: pointer;
+}
+.pagemenu li:active, .descri {
+    display: block;
+}
+.descri::after {
+    display: block;
+}
+.descri {
+    display: none;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    min-height: 100%;
+}
+.pagemenu section {
+    font-size: .7em;
+}
+.pagemenu ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.menus > p {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5vh;
+}
+/* ---------------- plat */
+.plats + .aperitif + .desserts + .boissons ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow:wrap-reverse ;
+    justify-content: center;
+}
+/* -------------------- titre menu */
+#menus {
+    background-image: url('../assets/img/img_carte/imgmenu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+#aperitifs {
+    background-image: url('../assets/img/img_carte/imgapero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+#plat {
+    background-image: url('../assets/img/img_carte/imgplat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+#dessert {
+    background-image: url('../assets/img/img_carte/imgdessert.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+#boisson {
+    background-image: url('../assets/img/img_carte/imgboisson.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+/* --------------------------------- menu zone noir */
+.menucarte {
+    background-color: rgba(0, 0, 0);
+    overflow: hidden;
+}
+.menucarte ul {
+    margin: 5vh;
+    list-style-type: disc white;
+    display: flex;
+    justify-content: space-around;
+}
+.menucarte a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 1em;
+}
+/* ------------------------------ engagement */
+.engagement {
+    background-image: url('../assets/img/imgengage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.presta {
+    background-image: url('../assets/img/imgpresta.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prestablack {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prestablack > p {
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 2vh;
+}
+.engage .cadre {
+    border-radius: 10px;
+}
+.engage .cadre h4 + .ligne3 {
+    margin: 2vh;
+}
+.engage:hover {
+    position: relative;
+    bottom: .5vh;
+}
+.titre3 {
+    margin-top: 5vh;
+}
+.cadrepencher {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(10deg);
+}
+.cadrepencher > p ~ ul {
+    margin: 2vh;
+    font-size: .5em;
+}
+.cadrepencher ul li {
+    list-style-type: none;
+}
+
+/* ----------------------------- h */
+h1 {
+    font-family: "japanese";
+    font-size: 2em;
+}
+.saikodeux {
+    font-family: "japanese";
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1em;
+    margin-left: 5%;
+}
+h3 {
+    font-size: 1em;
+    margin-left: 10%;
+}
+/* ---------------------------- menurond */
+.menurond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+.menurondin {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.rond {
+    cursor: pointer;
+}
+.rond h6 {
+    margin-bottom: 5vh;
+}
+.imgrond {
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.imgrond img {
+    transform: scale(2);
+    transition: .5s ease;
+    width: 50vh;
+}
+.rond:hover img {
+    transition: .5s ease;
+    transform: scale(1);
+}
+.voir {
+    width: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+}
+.voir:hover {
+    position: relative;
+    bottom: .5vh;
+}
+.voir > p {
+    margin: 2vh;
+    font-size: 2em;
+    text-decoration: underline;
+}
+/* ------------------------- carousel */
+.slide {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5vh;
+}
+.slide:hover > p {
+    border-bottom: outset .2vh red;
+}
+.slide img {
+    width: 50%;
+    align-self: center;
+}
+.slide p {
+    font-size: .5em;
+    color: whitesmoke;
+    margin: 5vh;
+    align-self: center;
+    border-bottom: outset .2vh transparent;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: black;
+}
+.prev, .next {
+    margin-top: 25vh;
+    padding: 5vh;
+    height: 20%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border-radius: 50%;
+}
+.prev:hover, .next:hover {
+    color: rgb(255, 0, 0);
+}
+.next {
+    right: 0;
+}
+/* --------------- menu jour */
+.offre {
+    display: flex;
+}
+.offre ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.offre ul li {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: .6em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.ou {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main ul li img {
+    width: 40vh;
+}
+.moinsdix {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5vh;
+}
+/* ------------------------ page panier */
+.pagepanier ul {
+    margin: 10vh;
+}
+.total {
+    margin: 5vh;
+}
+/* ------------- footer */
+footer {
+    background-image: url('../assets/img/imgfooter.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+/* -------------------- formulaire */
+form {
+    background-color: rgba(0, 0, 0, 0.68);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    overflow: auto;
+    margin: 5vh;
+}
+form .btn ~ .ligne {
+    margin: 5vh;
+}
+form input {
+    margin-left: 20%;
+    width: 50%;
+    font-size: 1em;
+    color: whitesmoke;
+}
+form input::placeholder {
+    font-size: .5em;
+    text-decoration: underline white;
+    color: rgba(255, 255, 255, 0);
+}
+form label {
+    font-size: .5em;
+    margin-left: 10%;
+    margin-top: 2vh;
+}
+.send {
+    margin-left: 30%;
+}
+.send:hover {
+    position: relative;
+    bottom: .5vh;
+}
+.btn {
+    background: none;
+    width: 50%;
+    font-size: .5em;
+    cursor: pointer;
+}
+/* ------------------ parafooter */
+.parafooter {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 100%;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.para2 {
+    margin: 5vh;
+}
+.parafooter > .para2 > p {
+    font-size: .7em;
+}
+.pasnous, .peuxetre {
+    margin-left: 40%;
+}
