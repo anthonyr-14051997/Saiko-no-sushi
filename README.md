@@ -3,7 +3,7 @@
 ## Réalisation d’un site restaurant incluant un backoffice
 
 ## Logo du site
-[![forthebadge Lien-du-site](http://ForTheBadge.com/images/badges/Lien-du-site.svg)](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/Logo.png)
+[![forthebadge Lien-du-site](http://ForTheBadge.com/images/badges/made-width-rust.svg)](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/Logo.png)
 
 ## Introduction
 Je dois réaliser un dossier de conception sur figma pour l’aspect front du site ainsi qu’un **MCD : Modèle de Conception de Database** pour la partie back sur workbench.
