@@ -4,8 +4,6 @@ session_start();
 $loginOK = false;
 if(isset($_POST['valider'])){
     if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
-        $pseudo_par_defaut = "admin";
-        $mdp_par_defaut = "admin1234";
 
         $pseudo_saisi = htmlspecialchars($_POST['pseudo']);
         $mdp_saisi = htmlspecialchars($_POST['mdp']);
