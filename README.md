@@ -4,6 +4,7 @@
 
 ## Attention
 Pour que se projet fonctionne vous devez créer un fichier dans backoffice nommé bdd.php et inclure vos identifiants de bdd à l'intérieur, bien sur vérifié que votre bdd comporte les mêmes champs que moi ou alors changez les noms dans les requètes !
+Egalement créer des identifiants pour le backoffice.
 
 ## Logo du site
 [![forthebadge made-with-rust](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/lien-du-logo.svg)](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/Logo.png)
