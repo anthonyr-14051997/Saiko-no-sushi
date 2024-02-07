@@ -38,8 +38,5 @@ Je réalise maintenant les options du backoffice qui permettent **d’ajouter**,
 ![Logo markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![Logo linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
-## Lien du site
-https://anthonyr.promo-106.codeur.online/saiko_no_sushi/
-
 ## Mon GitHub
 https://github.com/anthonyr-14051997
