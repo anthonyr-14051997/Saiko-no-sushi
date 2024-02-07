@@ -40,7 +40,7 @@ Je réalise maintenant les options du backoffice qui permettent **d’ajouter**,
 
 ## Image du site
 
-![en-tete](C:/Users/aruby/OneDrive/Images/saiko.png "saiko")
+![en-tete](saiko.png "saiko")
 
 ## Mon GitHub
 https://github.com/anthonyr-14051997
