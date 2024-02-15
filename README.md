@@ -40,7 +40,7 @@ Je réalise maintenant les options du backoffice qui permettent **d’ajouter**,
 
 ## Image du site
 
-![en-tete](https://github.com/anthonyr-14051997/Saiko-no-sushi/blob/master//en-tete.png)
+![en-tete](https://github.com/anthonyr-14051997/anthonyr-14051997/blob/master/Saiko-no-sushi/assets/img/en-tete.png)
 
 
 
