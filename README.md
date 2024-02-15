@@ -7,7 +7,7 @@ Pour que se projet fonctionne vous devez créer un fichier dans backoffice nomm�
 Egalement créer des identifiants pour le backoffice.
 
 ## Logo du site
-[![forthebadge made-with-rust](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/lien-du-logo.svg)](https://anthonyr.promo-106.codeur.online/saiko_no_sushi/assets/img/Logo.png)
+[![forthebadge made-with-rust](https://github.com/anthonyr-14051997/Saiko-no-sushi/blob/main/saiko_no_sushi/assets/img/logo.svg)
 
 ## Introduction
 Je dois réaliser un dossier de conception sur figma pour l’aspect front du site ainsi qu’un **MCD : Modèle de Conception de Database** pour la partie back sur workbench.
