@@ -40,7 +40,7 @@ Je réalise maintenant les options du backoffice qui permettent **d’ajouter**,
 
 ## Image du site
 
-![Saiko]([https://private-user-images.githubusercontent.com/to/86236227/302983942-37444774-ea88-4d5f-90e3-a2c11b89df5c.png "en-tete")
+![Cover](https://github.com/anthonyr-14051997/anthonyr-14051997/blob/master/img/en-tete.png)
 
 
 
